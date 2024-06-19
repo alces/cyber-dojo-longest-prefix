@@ -10,7 +10,7 @@ var longestResults = []struct{
     expected int
 } {
     {[]string{}, 0},
-    {[]string{"oldest"}, 5},
+    {[]string{"oldest"}, 6},
     {[]string{"newest", "new", "newly"}, 3},
     {[]string{"new", "next"}, 2},
     {[]string{"pond", "pod", "new", "newest"}, 0},

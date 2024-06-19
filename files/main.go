@@ -1,8 +1,14 @@
 package common_prefix
 
 func Longest(words []string) (result int) {
-    if len(words) == 0 {
+    size := len(words)
+    
+    if size == 0 {
         return
+    }
+    
+    if size == 1 {
+        return len(words[0])
     }
     
     for {

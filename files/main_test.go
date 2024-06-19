@@ -1,7 +1,9 @@
 package common_prefix
 
 import (
+    "fmt"
     "testing"
+
     "github.com/stretchr/testify/assert"
 )
 
@@ -32,6 +34,7 @@ var getPrefixResults = []struct{
 
 func TestGetPrefix(t *testing.T) {
     for _, r := range getPrefixResults {
-        assert.Equal(t, r.expected, getPrefix(r.word, r.length))
+        message := fmt.Sprintf("word = '%s' len = %d", r.word, r.length)
+        assert.Equal(t, r.expected, getPrefix(r.word, r.length), message)
     }
 }

@@ -1,21 +1,10 @@
 --- FAIL: TestLongest (0.00s)
-panic: runtime error: slice bounds out of range [:4] with length 3 [recovered]
-	panic: runtime error: slice bounds out of range [:4] with length 3
-
-goroutine 19 [running]:
-testing.tRunner.func1.2({0x5cd2a0, 0xc0000e4228})
-	/usr/local/go/src/testing/testing.go:1389 +0x24e
-testing.tRunner.func1()
-	/usr/local/go/src/testing/testing.go:1392 +0x39f
-panic({0x5cd2a0, 0xc0000e4228})
-	/usr/local/go/src/runtime/panic.go:838 +0x207
-_/sandbox.Longest(...)
-	/sandbox/main.go:8
-_/sandbox.TestLongest(0x0?)
-	/sandbox/main_test.go:9 +0x165
-testing.tRunner(0xc000085860, 0x5f1960)
-	/usr/local/go/src/testing/testing.go:1439 +0x102
-created by testing.(*T).Run
-	/usr/local/go/src/testing/testing.go:1486 +0x35f
-exit status 2
-FAIL	_/sandbox	0.010s
+    main_test.go:9: 
+        	Error Trace:	main_test.go:9
+        	Error:      	Not equal: 
+        	            	expected: 3
+        	            	actual  : 2
+        	Test:       	TestLongest
+FAIL
+exit status 1
+FAIL	_/sandbox	0.003s

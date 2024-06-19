@@ -22,6 +22,16 @@ func TestLongest(t *testing.T) {
     }
 }
 
+var getPrefixResults = []struct{
+    word     string
+    length   int
+    expected string
+} {
+    {"pond", 2, "po"},
+}
+
 func TestGetPrefix(t *testing.T) {
-    assert.Equal(t, "po", getPrefix("pond", 2))
+    for _, r := range getPrefixResults {
+        assert.Equal(t, r.expected, getPrefix(r.word, r.length))
+    }
 }

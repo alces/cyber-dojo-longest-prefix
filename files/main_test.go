@@ -21,3 +21,7 @@ func TestLongest(t *testing.T) {
         assert.Equal(t, r.expected, Longest(r.words), r.words)
     }
 }
+
+func TestGetPrefix(t *testing.T) {
+    assert.Equal(t, "po", getPrefix("pond", 2))
+}

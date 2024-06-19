@@ -22,3 +22,7 @@ func Longest(words []string) int {
     
     return firstLen
 }
+
+func getPrefix(word string, length int) string {
+    return ""
+}

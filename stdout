@@ -1,2 +1,17 @@
-PASS
-ok  	_/sandbox	0.004s
+--- FAIL: TestGetPrefix (0.00s)
+    main_test.go:26: 
+        	Error Trace:	main_test.go:26
+        	Error:      	Not equal: 
+        	            	expected: "po"
+        	            	actual  : ""
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1 +1 @@
+        	            	-po
+        	            	+
+        	Test:       	TestGetPrefix
+FAIL
+exit status 1
+FAIL	_/sandbox	0.002s

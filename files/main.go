@@ -9,10 +9,6 @@ func Longest(words []string) int {
     
     firstLen := len(words[0])
     
-    if size == 1 {
-        return firstLen
-    }
-    
     for l := 0; l < firstLen; l++ {
         index := l + 1        
         prefix := words[0][:index]

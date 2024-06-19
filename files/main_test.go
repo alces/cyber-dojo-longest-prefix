@@ -5,6 +5,15 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
+var longestResults = []struct{
+    words    []string
+    expected int
+} {
+    {{"newest", "new", "newly"}, 3},
+}
+
 func TestLongest(t *testing.T) {
-    assert.Equal(t, 3, Longest([]string{"newest", "new", "newly"}))
+    for _, r := range longestResults {
+        assert.Equal(t, r.expected, Longest(r.words), r.words)
+    }
 }

@@ -7,11 +7,13 @@ func Longest(words []string) int {
         return 0
     }
     
+    firstLen := len(words[0])
+    
     if size == 1 {
-        return len(words[0])
+        return firstLen
     }
     
-    for l := 0; l < len(words[0]); l++ {
+    for l := 0; l < firstLen; l++ {
         index := l + 1        
         prefix := words[0][:index]
 
@@ -22,5 +24,5 @@ func Longest(words []string) int {
         }
     }
     
-    return len(words[0])
+    return firstLen
 }

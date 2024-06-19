@@ -30,6 +30,7 @@ var getPrefixResults = []struct{
     expected string
 } {
     {"pond", 2, "po"},
+    {"pond", 5, "pond"},
 }
 
 func TestGetPrefix(t *testing.T) {

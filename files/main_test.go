@@ -9,7 +9,7 @@ var longestResults = []struct{
     words    []string
     expected int
 } {
-    {{"newest", "new", "newly"}, 3},
+    {[]string{"newest", "new", "newly"}, 3},
 }
 
 func TestLongest(t *testing.T) {

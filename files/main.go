@@ -21,4 +21,6 @@ func Longest(words []string) int {
             }
         }
     }
+    
+    return len(words[0])
 }

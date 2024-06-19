@@ -9,6 +9,7 @@ var longestResults = []struct{
     words    []string
     expected int
 } {
+    {[]string{}, 0},
     {[]string{"newest", "new", "newly"}, 3},
     {[]string{"new", "next"}, 2},
     {[]string{"pond", "pod", "new", "newest"}, 0},

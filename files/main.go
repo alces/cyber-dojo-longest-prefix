@@ -24,5 +24,5 @@ func Longest(words []string) int {
 }
 
 func getPrefix(word string, length int) string {
-    return word[:length + 1]
+    return word[:length]
 }

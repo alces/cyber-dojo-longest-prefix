@@ -9,12 +9,12 @@ func Longest(words []string) int {
     
     firstLen := len(words[0])
     
-    for l := 0; l < firstLen; l++ {       
-        prefix := getPrefix(words[0], l + 1)
+    for l := 1; l <= firstLen; l++ {       
+        prefix := getPrefix(words[0], l)
 
         for i := 1; i < size; i++ {
-            if getPrefix(words[i], l + 1) != prefix {
-                return l
+            if getPrefix(words[i], l) != prefix {
+                return l - 1
             }
         }
     }

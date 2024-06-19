@@ -11,6 +11,7 @@ var longestResults = []struct{
 } {
     {[]string{"newest", "new", "newly"}, 3},
     {[]string{"new", "next"}, 2},
+    {[]string{"pond", "pod", "new", "newest"}, 0},
 }
 
 func TestLongest(t *testing.T) {

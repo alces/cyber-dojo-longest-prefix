@@ -1,10 +1,2 @@
---- FAIL: TestLongest (0.00s)
-    main_test.go:9: 
-        	Error Trace:	main_test.go:9
-        	Error:      	Not equal: 
-        	            	expected: 3
-        	            	actual  : 2
-        	Test:       	TestLongest
-FAIL
-exit status 1
-FAIL	_/sandbox	0.003s
+PASS
+ok  	_/sandbox	0.003s

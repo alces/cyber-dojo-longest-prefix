@@ -1,6 +1,10 @@
 package common_prefix
 
 func Longest(words []string) (result int) {
+    if len(words) == 0 {
+        return
+    }
+    
     for {
         index := result + 1
         if index > len(words[0]) {

@@ -23,7 +23,7 @@ func Longest(words []string) (result int) {
                 return
             }
         }
-        result += 1
+        result++
     }
     
     return

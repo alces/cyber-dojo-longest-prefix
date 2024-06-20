@@ -11,6 +11,10 @@ var allPairsResults = []struct {
     expected [][]string
 } {
     {
+        []string{"a"},
+        [][]string{},
+    },
+    {
         []string{"a", "b"},
         [][]string{{"a", "b"}},
     },

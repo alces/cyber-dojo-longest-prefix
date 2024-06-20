@@ -1,7 +1,14 @@
 package common_prefix
 
-func LongestInPairs(words []string) int {
-    return 0
+func LongestInPairs(words []string) (result int) {
+    for _, p := range allPairs(words) {
+        candidate := Longest(p)
+        if candidate > result {
+            result = candidate
+        }
+    }
+    
+    return
 }
 
 func allPairs(words []string) (result [][]string) {

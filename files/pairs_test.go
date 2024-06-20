@@ -31,6 +31,7 @@ var longestInPairsResults = []struct {
     expected int
 } {
     {[]string{"pond"}, 0},
+    {[]string{"pond", "newest"}, 0},
     {[]string{"pond", "pod", "new", "newest"}, 3},
 }
 

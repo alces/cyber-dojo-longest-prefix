@@ -1,1 +1,30 @@
-FAIL	_/sandbox [build failed]
+--- FAIL: TestAllPairs (0.00s)
+    pairs_test.go:13: 
+        	Error Trace:	pairs_test.go:13
+        	Error:      	elements differ
+        	            	
+        	            	extra elements in list A:
+        	            	([]interface {}) (len=1) {
+        	            	 ([]string) (len=2) {
+        	            	  (string) (len=1) "a",
+        	            	  (string) (len=1) "b"
+        	            	 }
+        	            	}
+        	            	
+        	            	
+        	            	listA:
+        	            	([][]string) (len=1) {
+        	            	 ([]string) (len=2) {
+        	            	  (string) (len=1) "a",
+        	            	  (string) (len=1) "b"
+        	            	 }
+        	            	}
+        	            	
+        	            	
+        	            	listB:
+        	            	([][]string) <nil>
+        	Test:       	TestAllPairs
+        	Messages:   	[a b]
+FAIL
+exit status 1
+FAIL	_/sandbox	0.002s

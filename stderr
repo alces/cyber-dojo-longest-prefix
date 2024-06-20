@@ -1,5 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./pairs_test.go:10:26: cannot use 'a' (untyped rune constant 97) as string value in array or slice literal
-./pairs_test.go:10:31: cannot use 'b' (untyped rune constant 98) as string value in array or slice literal
-./pairs_test.go:11:29: cannot use 'a' (untyped rune constant 97) as string value in array or slice literal
-./pairs_test.go:11:34: cannot use 'b' (untyped rune constant 98) as string value in array or slice literal

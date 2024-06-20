@@ -7,8 +7,8 @@ import (
 )
 
 func TestAllPairs(t *testing.T) {
-    argument := []string{'a', 'b'}
-    expected := [][]string{{'a', 'b'}}
+    argument := []string{"a", "b"}
+    expected := [][]string{{"a", "b"}}
     
     assert.ElementsMatch(t, expected, allPairs(argument), argument)
 }

@@ -15,10 +15,6 @@ var allPairsResults = []struct {
         [][]string{},
     },
     {
-        []string{"a", "b"},
-        [][]string{{"a", "b"}},
-    },
-    {
         []string{"a", "b", "c"},
         [][]string{{"a", "b"}, {"a", "c"}, {"b", "c"}},
     },

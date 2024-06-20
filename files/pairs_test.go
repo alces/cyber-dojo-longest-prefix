@@ -18,6 +18,10 @@ var allPairsResults = []struct {
         []string{"a", "b"},
         [][]string{{"a", "b"}},
     },
+    {
+        []string{"a", "b", "c"},
+        [][]string{{"a", "b"}, {"a", "c"}, {"b", "c"}},
+    },
 }
 
 func TestAllPairs(t *testing.T) {

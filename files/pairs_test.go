@@ -33,6 +33,7 @@ var longestInPairsResults = []struct {
     {[]string{"pond"}, 0},
     {[]string{"pond", "newest"}, 0},
     {[]string{"new", "night"}, 1},
+    {[]string{"newest", "new", "newly"}, 3},
     {[]string{"pond", "pod", "new", "newest"}, 3},
 }
 

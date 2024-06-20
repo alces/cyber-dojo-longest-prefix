@@ -26,6 +26,15 @@ func TestAllPairs(t *testing.T) {
     }
 }
 
+var longestInPairsResults = []struct {
+    argument []string
+    expected int
+} {
+    {[]string{"pond", "pod", "new", "newest"}, 3},
+}
+
 func TestLongestInPairs(t *testing.T) {
-    assert.Equal(t, 3, LongestInPairs([]string{"pond", "pod", "new", "newest"}))
+    for _, r := range longestInPairsResults {
+        assert.Equal(t, r.expected, LongestInPairs(r.argument), r.argument)
+    }
 }

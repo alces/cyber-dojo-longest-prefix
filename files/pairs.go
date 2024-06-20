@@ -8,10 +8,8 @@ func allPairs(words []string) (result [][]string) {
     }
     
     for i := 0; i < size; i++ {
-        for j := 0; j < size; j++ {
-            if i != j {
-                result = append(result, []string{words[i], words[j]})
-            }
+        for j := i + 1; j < size; j++ {
+            result = append(result, []string{words[i], words[j]})
         }    
     }    
     

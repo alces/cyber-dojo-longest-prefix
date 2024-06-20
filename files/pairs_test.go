@@ -6,9 +6,18 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
+var allPairsResults = []struct {
+    argument []string
+    expected [][]string
+} {
+    {
+        []string{"a", "b"},
+        [][]string{{"a", "b"}},
+    },
+}
+
 func TestAllPairs(t *testing.T) {
-    argument := []string{"a", "b"}
-    expected := [][]string{{"a", "b"}}
-    
-    assert.ElementsMatch(t, expected, allPairs(argument), argument)
+    for _, r := range allPairsResults {
+        assert.ElementsMatch(t, r.expected, allPairs(r.argument), r.argument)
+    }
 }

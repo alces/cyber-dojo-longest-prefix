@@ -25,3 +25,7 @@ func TestAllPairs(t *testing.T) {
         assert.ElementsMatch(t, r.expected, allPairs(r.argument), r.argument)
     }
 }
+
+func TestLongestInPairs(t *testing.T) {
+    assert.Equal(t, 3, LongestInPairs([]string{"pond", "pod", "new", "newest"}))
+}

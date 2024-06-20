@@ -1,2 +1,10 @@
-PASS
-ok  	_/sandbox	0.002s
+--- FAIL: TestLongestInPairs (0.00s)
+    pairs_test.go:30: 
+        	Error Trace:	pairs_test.go:30
+        	Error:      	Not equal: 
+        	            	expected: 3
+        	            	actual  : 0
+        	Test:       	TestLongestInPairs
+FAIL
+exit status 1
+FAIL	_/sandbox	0.004s

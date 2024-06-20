@@ -1,5 +1,9 @@
 package common_prefix
 
+func LongestInPairs(words []string) int {
+    return 0
+}
+
 func allPairs(words []string) (result [][]string) {
     size := len(words)
     
